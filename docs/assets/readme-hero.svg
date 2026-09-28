@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="484" viewBox="0 0 1200 484" role="img" aria-labelledby="title desc">
+  <title id="title">SupplyRCA: from KPI decline to traceable evidence</title>
+  <desc id="desc">Actual synthetic sample, SKU-001. Daily fill rate from March 23 through May 10, 2024. Baseline fill rate 100.0 percent; April 20 through May 10 fill rate 64.8 percent, with 591 unfilled units. Source: data/sample/dataset.json.gz, seed 42. This is an explanatory chart, not an application screenshot.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101c2c"/><stop offset="1" stop-color="#08121f"/></linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5fe0be" stop-opacity=".19"/><stop offset="1" stop-color="#5fe0be" stop-opacity=".02"/></linearGradient>
+  </defs>
+  <rect x="1" y="1" width="1198" height="482" rx="22" fill="url(#background)" stroke="#263749" stroke-width="2"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <rect x="48" y="45" width="8" height="8" rx="2" fill="#69e4c1"/>
+    <text x="68" y="58" fill="#81e8cf" font-size="16" font-weight="650" letter-spacing="2">FROM SIGNAL TO EVIDENCE</text>
+    <text x="48" y="134" fill="#f3f7fb" font-size="46" font-weight="720" letter-spacing="-1.5">The KPI changed.</text>
+    <text x="48" y="191" fill="#f3f7fb" font-size="46" font-weight="720" letter-spacing="-1.5">What changed upstream?</text>
+    <text x="48" y="238" fill="#b4c4d6" font-size="21">Follow the decline back to operational records.</text>
+    <line x1="48" y1="271" x2="573" y2="271" stroke="#304154"/>
+    <text x="48" y="309" fill="#a8b9cd" font-size="17">BASELINE FILL RATE</text>
+    <text x="48" y="356" fill="#f0f6fc" font-size="39" font-weight="650">100%</text>
+    <text x="240" y="309" fill="#a8b9cd" font-size="17">CURRENT</text>
+    <text x="240" y="356" fill="#ffcb80" font-size="39" font-weight="650">64.8%</text>
+    <text x="426" y="309" fill="#a8b9cd" font-size="17">UNFILLED</text>
+    <text x="426" y="356" fill="#f0f6fc" font-size="39" font-weight="650">591<tspan font-size="18" font-weight="400"> units</tspan></text>
+    <line x1="615" y1="46" x2="615" y2="370" stroke="#26394d"/>
+    <text x="652" y="62" fill="#f0f6fc" font-size="18" font-weight="600">Daily fill rate</text>
+    <text x="1134" y="62" text-anchor="end" fill="#a8b9cd" font-size="16">SKU-001</text>
+    <rect x="947.33" y="109" width="186.67" height="221" fill="#ffcb80" opacity=".045"/>
+    <text x="686" y="101" fill="#a8b9cd" font-size="15">Baseline</text>
+    <text x="959.33" y="101" fill="#ffcb80" font-size="15">Investigation window</text>
+    <g stroke="#2a3a4d" stroke-width="1">
+      <line x1="686" x2="1134" y1="130" y2="130"/>
+      <line x1="686" x2="1134" y1="230" y2="230"/>
+      <line x1="686" x2="1134" y1="330" y2="330"/>
+    </g>
+    <g fill="#a8b9cd" font-size="15" text-anchor="end">
+      <text x="672" y="135">100%</text><text x="672" y="235">50%</text><text x="672" y="335">0%</text>
+    </g>
+    <line x1="947.33" x2="947.33" y1="111" y2="330" stroke="#bc985e" stroke-dasharray="4 5" opacity=".8"/>
+    <polygon points="686,330 686.00,130.00 695.33,130.00 704.67,130.00 714.00,130.00 723.33,130.00 732.67,130.00 742.00,130.00 751.33,130.00 760.67,130.00 770.00,130.00 779.33,130.00 788.67,130.00 798.00,130.00 807.33,130.00 816.67,130.00 826.00,130.00 835.33,130.00 844.67,130.00 854.00,130.00 863.33,130.00 872.67,130.00 882.00,130.00 891.33,130.00 900.67,130.00 910.00,130.00 919.33,130.00 928.67,130.00 938.00,130.00 947.33,130.00 956.67,130.00 966.00,130.00 975.33,146.47 984.67,220.11 994.00,220.11 1003.33,206.54 1012.67,212.54 1022.00,217.88 1031.33,208.05 1040.67,218.89 1050.00,218.89 1059.33,216.36 1068.67,218.89 1078.00,214.38 1087.33,206.67 1096.67,220.11 1106.00,215.06 1115.33,210.95 1124.67,208.05 1134.00,208.05 1134,330" fill="url(#area)"/>
+    <polyline points="686.00,130.00 695.33,130.00 704.67,130.00 714.00,130.00 723.33,130.00 732.67,130.00 742.00,130.00 751.33,130.00 760.67,130.00 770.00,130.00 779.33,130.00 788.67,130.00 798.00,130.00 807.33,130.00 816.67,130.00 826.00,130.00 835.33,130.00 844.67,130.00 854.00,130.00 863.33,130.00 872.67,130.00 882.00,130.00 891.33,130.00 900.67,130.00 910.00,130.00 919.33,130.00 928.67,130.00 938.00,130.00 947.33,130.00 956.67,130.00 966.00,130.00 975.33,146.47 984.67,220.11 994.00,220.11 1003.33,206.54 1012.67,212.54 1022.00,217.88 1031.33,208.05 1040.67,218.89 1050.00,218.89 1059.33,216.36 1068.67,218.89 1078.00,214.38 1087.33,206.67 1096.67,220.11 1106.00,215.06 1115.33,210.95 1124.67,208.05 1134.00,208.05" fill="none" stroke="#69e4c1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="1134.00" cy="208.05" r="4.5" fill="#69e4c1"/>
+    <g fill="#a8b9cd" font-size="15"><text x="686" y="361">Mar 23</text><text x="947.33" y="361" text-anchor="middle">Apr 20</text><text x="1134" y="361" text-anchor="end">May 10</text></g>
+    <line x1="1" y1="403" x2="1199" y2="403" stroke="#263749"/>
+    <text x="48" y="451" fill="#d7e4f0" font-size="18">Deterministic diagnostics <tspan fill="#58758c"> / </tspan> Local AI optional <tspan fill="#58758c"> / </tspan> Analyst review</text>
+    <rect x="872" y="425" width="280" height="37" rx="18.5" fill="#152b32" stroke="#2d5355"/>
+    <text x="1012" y="449" fill="#a6e9d5" text-anchor="middle" font-size="14" font-weight="600" letter-spacing=".7">ACTUAL SYNTHETIC DEMO</text>
+  </g>
+</svg>

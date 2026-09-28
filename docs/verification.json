@@ -1,0 +1,50 @@
+{
+  "backend": {
+    "passed": 52,
+    "skipped": 1,
+    "coverage_percent": 89,
+    "domain_coverage_percent": 96,
+    "note": "PostgreSQL test skipped in default suite; separately executed successfully against PostgreSQL 16.2",
+    "distribution_build": "sdist and wheel passed",
+    "reproduction": "exported JSON deterministic SHA-256 verified independently"
+  },
+  "postgresql": {
+    "passed": 1,
+    "version": "16.2",
+    "platform": "aarch64-apple-darwin",
+    "compose_role_initialization": "passed; reader write denied"
+  },
+  "frontend": {
+    "unit_tests_passed": 5,
+    "lint": "passed",
+    "typecheck": "passed",
+    "production_build": "passed"
+  },
+  "browser": {
+    "end_to_end_tests_passed": 2,
+    "desktop_viewport": "1440x1050",
+    "mobile_viewport": "390x844"
+  },
+  "security": {
+    "python_runtime_known_vulnerabilities": 0,
+    "frontend_production_advisory_summary": {
+      "vulnerabilities": {
+        "info": 0,
+        "low": 0,
+        "moderate": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "dependencies": 7,
+      "devDependencies": 0,
+      "optionalDependencies": 0,
+      "totalDependencies": 7
+    }
+  },
+  "not_verified": [
+    "Docker Compose execution: no daemon available",
+    "GitHub Actions: publication deferred by request",
+    "Windows native execution",
+    "Real model inference"
+  ]
+}

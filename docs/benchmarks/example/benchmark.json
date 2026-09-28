@@ -1,0 +1,943 @@
+{
+  "generated_at": "2026-09-27T22:14:02.159580+00:00",
+  "hardware": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "logical_cpus": 10,
+    "python": "3.12.14",
+    "dependencies": {
+      "polars": "1.44.2",
+      "scipy": "1.18.1",
+      "ruptures": "1.1.10",
+      "pydantic": "2.13.5"
+    }
+  },
+  "configuration": {
+    "seed": 42,
+    "generator_version": "1.0.0",
+    "algorithm_version": "1.0.0",
+    "runtime": "none",
+    "model": null,
+    "temperature": 0,
+    "prompt_version": "evidence-only-v1",
+    "timing_scope": "analyze + narrate; excludes loading/validation/database"
+  },
+  "dataset_sha256": "90d87ae8aee3b8d3468bb4856e7eb6d3029025822c6ed313915b36af09a92da7",
+  "record_count": 23396,
+  "incident_count": 40,
+  "healthy_control_count": 16,
+  "metrics": {
+    "known_cause_top1_recovery": 1,
+    "known_cause_top3_recovery": 1,
+    "false_contributor_rate": 0.0,
+    "healthy_window_false_alert_rate": 0,
+    "change_point_recall_within_7_days": 1,
+    "change_point_mean_absolute_onset_error_days": 3.525,
+    "narrative_citation_coverage": 1.0,
+    "diagnosis_median_ms": 7.03733300906606,
+    "diagnosis_p95_ms": 7.996459025889635
+  },
+  "episodes": [
+    {
+      "incident_id": "INC-001-1",
+      "expected": "supplier_delay",
+      "predicted": [
+        "supplier_delay"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2024-04-24"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 4,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 8.383500040508807
+    },
+    {
+      "incident_id": "INC-001-2",
+      "expected": "transport_delay",
+      "predicted": [
+        "transport_delay"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2024-08-12"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 4,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 7.230916991829872
+    },
+    {
+      "incident_id": "INC-001-3",
+      "expected": "demand_surge",
+      "predicted": [
+        "demand_surge"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2024-11-29"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 3,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 7.345499994698912
+    },
+    {
+      "incident_id": "INC-001-4",
+      "expected": "forecast_bias",
+      "predicted": [
+        "forecast_bias"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2025-03-20"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 4,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 6.724499980919063
+    },
+    {
+      "incident_id": "INC-001-5",
+      "expected": "overforecast",
+      "predicted": [
+        "overforecast"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2025-07-05"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 1,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 7.346125028561801
+    },
+    {
+      "incident_id": "INC-002-1",
+      "expected": "supplier_delay",
+      "predicted": [
+        "supplier_delay"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2024-04-26"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 3,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 7.240124978125095
+    },
+    {
+      "incident_id": "INC-002-2",
+      "expected": "transport_delay",
+      "predicted": [
+        "transport_delay"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2024-08-15"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 4,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 6.627707974985242
+    },
+    {
+      "incident_id": "INC-002-3",
+      "expected": "demand_surge",
+      "predicted": [
+        "demand_surge"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2024-12-03"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 4,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 6.932292017154396
+    },
+    {
+      "incident_id": "INC-002-4",
+      "expected": "forecast_bias",
+      "predicted": [
+        "forecast_bias"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2025-03-24"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 5,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 6.73416699282825
+    },
+    {
+      "incident_id": "INC-002-5",
+      "expected": "overforecast",
+      "predicted": [
+        "overforecast"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2025-07-08"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 1,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 7.285041036084294
+    },
+    {
+      "incident_id": "INC-003-1",
+      "expected": "supplier_delay",
+      "predicted": [
+        "supplier_delay"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2024-04-30"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 4,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 7.230249990243465
+    },
+    {
+      "incident_id": "INC-003-2",
+      "expected": "transport_delay",
+      "predicted": [
+        "transport_delay"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2024-08-18"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 4,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 6.55449996702373
+    },
+    {
+      "incident_id": "INC-003-3",
+      "expected": "demand_surge",
+      "predicted": [
+        "demand_surge"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2024-12-07"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 5,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 7.04108300851658
+    },
+    {
+      "incident_id": "INC-003-4",
+      "expected": "forecast_bias",
+      "predicted": [
+        "forecast_bias"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2025-03-27"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 5,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 6.85641699237749
+    },
+    {
+      "incident_id": "INC-003-5",
+      "expected": "overforecast",
+      "predicted": [
+        "overforecast"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2025-07-11"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 1,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 7.057333015836775
+    },
+    {
+      "incident_id": "INC-004-1",
+      "expected": "supplier_delay",
+      "predicted": [
+        "supplier_delay"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2024-05-02"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 3,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 7.3901250143535435
+    },
+    {
+      "incident_id": "INC-004-2",
+      "expected": "transport_delay",
+      "predicted": [
+        "transport_delay"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2024-08-21"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 4,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 7.996459025889635
+    },
+    {
+      "incident_id": "INC-004-3",
+      "expected": "demand_surge",
+      "predicted": [
+        "demand_surge"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2024-12-10"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 5,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 7.299083983525634
+    },
+    {
+      "incident_id": "INC-004-4",
+      "expected": "forecast_bias",
+      "predicted": [
+        "forecast_bias"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2025-03-30"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 5,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 6.955415999982506
+    },
+    {
+      "incident_id": "INC-004-5",
+      "expected": "overforecast",
+      "predicted": [
+        "overforecast"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2025-07-14"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 1,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 7.380582974292338
+    },
+    {
+      "incident_id": "INC-005-1",
+      "expected": "supplier_delay",
+      "predicted": [
+        "supplier_delay"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2024-05-06"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 4,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 6.963250052649528
+    },
+    {
+      "incident_id": "INC-005-2",
+      "expected": "transport_delay",
+      "predicted": [
+        "transport_delay"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2024-08-23"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 3,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 6.727625033818185
+    },
+    {
+      "incident_id": "INC-005-3",
+      "expected": "demand_surge",
+      "predicted": [
+        "demand_surge"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2024-12-12"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 4,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 7.068333972711116
+    },
+    {
+      "incident_id": "INC-005-4",
+      "expected": "forecast_bias",
+      "predicted": [
+        "forecast_bias"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2025-04-02"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 5,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 6.768500024918467
+    },
+    {
+      "incident_id": "INC-005-5",
+      "expected": "overforecast",
+      "predicted": [
+        "overforecast"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2025-07-17"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 1,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 7.329041953198612
+    },
+    {
+      "incident_id": "INC-006-1",
+      "expected": "supplier_delay",
+      "predicted": [
+        "supplier_delay"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2024-05-08"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 3,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 7.219500024802983
+    },
+    {
+      "incident_id": "INC-006-2",
+      "expected": "transport_delay",
+      "predicted": [
+        "transport_delay"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2024-08-27"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 4,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 6.821791990660131
+    },
+    {
+      "incident_id": "INC-006-3",
+      "expected": "demand_surge",
+      "predicted": [
+        "demand_surge"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2024-12-15"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 4,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 7.148083997890353
+    },
+    {
+      "incident_id": "INC-006-4",
+      "expected": "forecast_bias",
+      "predicted": [
+        "forecast_bias"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2025-04-05"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 5,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 6.764041027054191
+    },
+    {
+      "incident_id": "INC-006-5",
+      "expected": "overforecast",
+      "predicted": [
+        "overforecast"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2025-07-20"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 1,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 7.053250039462
+    },
+    {
+      "incident_id": "INC-007-1",
+      "expected": "supplier_delay",
+      "predicted": [
+        "supplier_delay"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2024-05-12"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 4,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 6.578708009328693
+    },
+    {
+      "incident_id": "INC-007-2",
+      "expected": "transport_delay",
+      "predicted": [
+        "transport_delay"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2024-08-30"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 4,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 6.865207978989929
+    },
+    {
+      "incident_id": "INC-007-3",
+      "expected": "demand_surge",
+      "predicted": [
+        "demand_surge"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2024-12-21"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 7,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 7.177749997936189
+    },
+    {
+      "incident_id": "INC-007-4",
+      "expected": "forecast_bias",
+      "predicted": [
+        "forecast_bias"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2025-04-07"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 4,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 6.792958010919392
+    },
+    {
+      "incident_id": "INC-007-5",
+      "expected": "overforecast",
+      "predicted": [
+        "overforecast"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2025-07-23"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 1,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 7.0335830096155405
+    },
+    {
+      "incident_id": "INC-008-1",
+      "expected": "supplier_delay",
+      "predicted": [
+        "supplier_delay"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2024-05-15"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 4,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 6.738084019161761
+    },
+    {
+      "incident_id": "INC-008-2",
+      "expected": "transport_delay",
+      "predicted": [
+        "transport_delay"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2024-09-02"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 4,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 6.534958025440574
+    },
+    {
+      "incident_id": "INC-008-3",
+      "expected": "demand_surge",
+      "predicted": [
+        "demand_surge"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2024-12-21"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 4,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 6.978541030548513
+    },
+    {
+      "incident_id": "INC-008-4",
+      "expected": "forecast_bias",
+      "predicted": [
+        "forecast_bias"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2025-04-10"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 4,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 6.9557499955408275
+    },
+    {
+      "incident_id": "INC-008-5",
+      "expected": "overforecast",
+      "predicted": [
+        "overforecast"
+      ],
+      "top1_correct": true,
+      "top3_correct": true,
+      "false_contributors": 0,
+      "contributors": 1,
+      "change_points": [
+        "2025-07-26"
+      ],
+      "change_point_within_7_days": true,
+      "onset_error_days": 1,
+      "cited_claims": 1,
+      "claims": 1,
+      "narrative_origin": "deterministic_template",
+      "latency_ms": 7.290500041563064
+    }
+  ],
+  "healthy_controls": [
+    {
+      "sku": "SKU-001",
+      "start": "2024-02-15",
+      "hypotheses": 0,
+      "change_points": 0
+    },
+    {
+      "sku": "SKU-001",
+      "start": "2025-10-01",
+      "hypotheses": 0,
+      "change_points": 0
+    },
+    {
+      "sku": "SKU-002",
+      "start": "2024-02-15",
+      "hypotheses": 0,
+      "change_points": 0
+    },
+    {
+      "sku": "SKU-002",
+      "start": "2025-10-01",
+      "hypotheses": 0,
+      "change_points": 0
+    },
+    {
+      "sku": "SKU-003",
+      "start": "2024-02-15",
+      "hypotheses": 0,
+      "change_points": 0
+    },
+    {
+      "sku": "SKU-003",
+      "start": "2025-10-01",
+      "hypotheses": 0,
+      "change_points": 0
+    },
+    {
+      "sku": "SKU-004",
+      "start": "2024-02-15",
+      "hypotheses": 0,
+      "change_points": 0
+    },
+    {
+      "sku": "SKU-004",
+      "start": "2025-10-01",
+      "hypotheses": 0,
+      "change_points": 0
+    },
+    {
+      "sku": "SKU-005",
+      "start": "2024-02-15",
+      "hypotheses": 0,
+      "change_points": 0
+    },
+    {
+      "sku": "SKU-005",
+      "start": "2025-10-01",
+      "hypotheses": 0,
+      "change_points": 0
+    },
+    {
+      "sku": "SKU-006",
+      "start": "2024-02-15",
+      "hypotheses": 0,
+      "change_points": 0
+    },
+    {
+      "sku": "SKU-006",
+      "start": "2025-10-01",
+      "hypotheses": 0,
+      "change_points": 0
+    },
+    {
+      "sku": "SKU-007",
+      "start": "2024-02-15",
+      "hypotheses": 0,
+      "change_points": 0
+    },
+    {
+      "sku": "SKU-007",
+      "start": "2025-10-01",
+      "hypotheses": 0,
+      "change_points": 0
+    },
+    {
+      "sku": "SKU-008",
+      "start": "2024-02-15",
+      "hypotheses": 0,
+      "change_points": 0
+    },
+    {
+      "sku": "SKU-008",
+      "start": "2025-10-01",
+      "hypotheses": 0,
+      "change_points": 0
+    }
+  ],
+  "total_runtime_seconds": 0.5351321670459583,
+  "peak_rss_mib": 260.296875
+}

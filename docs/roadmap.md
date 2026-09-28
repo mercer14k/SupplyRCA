@@ -1,0 +1,9 @@
+# Next five technically meaningful improvements
+
+1. **Calibrate statistical support on independent cases.** Add blocked permutations or block bootstrap intervals for autocorrelation, lagged association tests, change-point precision and independently generated negative/mixed-cause cases. Freeze thresholds before a held-out evaluation. Success means reported calibration and error rates beyond the current in-family simulator.
+2. **Model order and receipt events explicitly.** Introduce immutable order lines, promised dates, partial receipts, cancellations, shipment legs and backorders. Reconcile lead-time variability and service losses through event-level lineage, including time zones and late-arriving data.
+3. **Move investigations to durable isolated workers.** Add bounded queues, cancellation, per-episode resource budgets and progress endpoints; make narrative generation asynchronous after deterministic results commit. Benchmark concurrent investigations and model timeouts without blocking user review.
+4. **Add migrations and real authorization domains.** Introduce Alembic migrations, normalized indexed source partitions, explicit owner/workspace roles, least-privilege runtime DB credentials, backup/restore tests and signed dataset manifests. Preserve historical report reproducibility across schema upgrades.
+5. **Evaluate narrative entailment and model reproducibility.** Record model digests/quantization/runtime versions, test citation spoofing and contradictory evidence, measure unsupported qualitative claims with independently labeled assessments, and publish local-runtime comparison results with hardware and fallback rates.
+
+Bayesian causal graphs, causal-impact experiments, automated playbooks and incident clustering are stretch work. Do not present them as current features or start them before the core regressions, deployment checks and operational data validation pass.
