@@ -1,0 +1,3 @@
+[console_scripts]
+supplyrca-benchmark = supplyrca.evaluation.benchmark:main
+supplyrca-generate = supplyrca.data.generate:main

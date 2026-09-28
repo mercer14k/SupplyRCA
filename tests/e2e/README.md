@@ -1,0 +1,1 @@
+The browser workflow suite lives in `apps/web/e2e/workflow.spec.ts` alongside its Playwright configuration. Run `pnpm test:e2e` from `apps/web` with API/Vite running, or use `E2E_BASE_URL=http://localhost:8080` for Compose. The GitHub Compose job runs this suite against actual built containers. API-only end-to-end smoke is `python scripts/smoke.py`.
