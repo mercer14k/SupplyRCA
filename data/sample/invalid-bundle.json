@@ -1,0 +1,246 @@
+{
+  "schema_version": "1",
+  "tables": {
+    "demand": [
+      {
+        "date": "2024-01-01",
+        "demand": -10,
+        "forecast": 86,
+        "fulfilled": 88.0,
+        "id": "D-SKU-001-2024-01-01",
+        "ingested_at": "2026-01-01T00:00:00Z",
+        "lineage": {
+          "generator": "1.0.0"
+        },
+        "market": "North-America",
+        "sku": "SKU-001",
+        "source_id": "synthetic-42-8",
+        "supplier_id": "SUP-01",
+        "validation_status": "valid"
+      },
+      {
+        "date": "2024-01-02",
+        "demand": 84,
+        "forecast": 86,
+        "fulfilled": 84.0,
+        "id": "D-SKU-001-2024-01-02",
+        "ingested_at": "2026-01-01T00:00:00Z",
+        "lineage": {
+          "generator": "1.0.0"
+        },
+        "market": "North-America",
+        "sku": "SKU-001",
+        "source_id": "synthetic-42-8",
+        "supplier_id": "SUP-01",
+        "validation_status": "valid"
+      },
+      {
+        "date": "2024-01-03",
+        "demand": 88,
+        "forecast": 86,
+        "fulfilled": 88.0,
+        "id": "D-SKU-001-2024-01-03",
+        "ingested_at": "2026-01-01T00:00:00Z",
+        "lineage": {
+          "generator": "1.0.0"
+        },
+        "market": "North-America",
+        "sku": "SKU-001",
+        "source_id": "synthetic-42-8",
+        "supplier_id": "SUP-01",
+        "validation_status": "valid"
+      }
+    ],
+    "inventory": [
+      {
+        "closing": 162.0,
+        "date": "2024-01-01",
+        "id": "I-SKU-001-2024-01-01",
+        "ingested_at": "2026-01-01T00:00:00Z",
+        "lineage": {
+          "generator": "1.0.0"
+        },
+        "market": "North-America",
+        "opening": 160.0,
+        "received": 90.0,
+        "shipped": 88.0,
+        "sku": "SKU-001",
+        "source_id": "synthetic-42-8",
+        "supplier_id": "SUP-01",
+        "validation_status": "valid"
+      },
+      {
+        "closing": 999,
+        "date": "2024-01-02",
+        "id": "I-SKU-001-2024-01-02",
+        "ingested_at": "2026-01-01T00:00:00Z",
+        "lineage": {
+          "generator": "1.0.0"
+        },
+        "market": "North-America",
+        "opening": 162.0,
+        "received": 90.0,
+        "shipped": 84.0,
+        "sku": "SKU-001",
+        "source_id": "synthetic-42-8",
+        "supplier_id": "SUP-01",
+        "validation_status": "valid"
+      },
+      {
+        "closing": 167.0,
+        "date": "2024-01-03",
+        "id": "I-SKU-001-2024-01-03",
+        "ingested_at": "2026-01-01T00:00:00Z",
+        "lineage": {
+          "generator": "1.0.0"
+        },
+        "market": "North-America",
+        "opening": 168.0,
+        "received": 87.0,
+        "shipped": 88.0,
+        "sku": "SKU-001",
+        "source_id": "synthetic-42-8",
+        "supplier_id": "SUP-01",
+        "validation_status": "valid"
+      }
+    ],
+    "purchase_orders": [
+      {
+        "date": "2024-01-01",
+        "id": "P-SKU-001-2024-01-01",
+        "ingested_at": "2026-01-01T00:00:00Z",
+        "lead_days": 7,
+        "lineage": {
+          "generator": "1.0.0"
+        },
+        "market": "North-America",
+        "ordered": 90,
+        "promised_lead_days": 7,
+        "received": 90.0,
+        "sku": "SKU-001",
+        "source_id": "synthetic-42-8",
+        "supplier_id": "SUP-01",
+        "validation_status": "valid"
+      },
+      {
+        "date": "2024-01-02",
+        "id": "P-SKU-001-2024-01-02",
+        "ingested_at": "2026-01-01T00:00:00Z",
+        "lead_days": 7,
+        "lineage": {
+          "generator": "1.0.0"
+        },
+        "market": "North-America",
+        "ordered": 90,
+        "promised_lead_days": 7,
+        "received": 90.0,
+        "sku": "SKU-001",
+        "source_id": "synthetic-42-8",
+        "supplier_id": "SUP-01",
+        "validation_status": "valid"
+      },
+      {
+        "date": "2024-01-03",
+        "id": "P-SKU-001-2024-01-03",
+        "ingested_at": "2026-01-01T00:00:00Z",
+        "lead_days": 6,
+        "lineage": {
+          "generator": "1.0.0"
+        },
+        "market": "North-America",
+        "ordered": 87,
+        "promised_lead_days": 7,
+        "received": 87.0,
+        "sku": "SKU-001",
+        "source_id": "synthetic-42-8",
+        "supplier_id": "SUP-01",
+        "validation_status": "valid"
+      }
+    ],
+    "shipments": [
+      {
+        "date": "2024-01-01",
+        "id": "T-SKU-001-2024-01-01",
+        "ingested_at": "2026-01-01T00:00:00Z",
+        "lineage": {
+          "generator": "1.0.0"
+        },
+        "market": "North-America",
+        "planned_transit_days": 2,
+        "po_id": "P-SKU-001-2024-01-01",
+        "sku": "SKU-001",
+        "source_id": "synthetic-42-8",
+        "supplier_id": "SUP-01",
+        "transit_days": 2.12,
+        "validation_status": "valid"
+      },
+      {
+        "date": "2024-01-02",
+        "id": "T-SKU-001-2024-01-02",
+        "ingested_at": "2026-01-01T00:00:00Z",
+        "lineage": {
+          "generator": "1.0.0"
+        },
+        "market": "North-America",
+        "planned_transit_days": 2,
+        "po_id": "P-SKU-001-2024-01-02",
+        "sku": "SKU-001",
+        "source_id": "synthetic-42-8",
+        "supplier_id": "SUP-01",
+        "transit_days": 2.12,
+        "validation_status": "valid"
+      },
+      {
+        "date": "2024-01-03",
+        "id": "T-SKU-001-2024-01-03",
+        "ingested_at": "2026-01-01T00:00:00Z",
+        "lineage": {
+          "generator": "1.0.0"
+        },
+        "market": "North-America",
+        "planned_transit_days": 2,
+        "po_id": "P-SKU-001-2024-01-03",
+        "sku": "SKU-001",
+        "source_id": "synthetic-42-8",
+        "supplier_id": "SUP-01",
+        "transit_days": 1.79,
+        "validation_status": "valid"
+      }
+    ],
+    "suppliers": [
+      {
+        "country": "US",
+        "id": "SUP-01",
+        "ingested_at": "2026-01-01T00:00:00Z",
+        "lineage": {
+          "generator": "1.0.0"
+        },
+        "name": "Atlas Components",
+        "source_id": "synthetic-42-8",
+        "validation_status": "valid"
+      },
+      {
+        "country": "MX",
+        "id": "SUP-02",
+        "ingested_at": "2026-01-01T00:00:00Z",
+        "lineage": {
+          "generator": "1.0.0"
+        },
+        "name": "Meridian Supply",
+        "source_id": "synthetic-42-8",
+        "validation_status": "valid"
+      },
+      {
+        "country": "DE",
+        "id": "SUP-03",
+        "ingested_at": "2026-01-01T00:00:00Z",
+        "lineage": {
+          "generator": "1.0.0"
+        },
+        "name": "Northstar Industrial",
+        "source_id": "synthetic-42-8",
+        "validation_status": "valid"
+      }
+    ]
+  }
+}

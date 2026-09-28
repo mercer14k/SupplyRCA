@@ -1,0 +1,402 @@
+[
+  {
+    "id": "INC-001-1",
+    "sku": "SKU-001",
+    "market": "North-America",
+    "supplier_id": "SUP-01",
+    "cause": "supplier_delay",
+    "start": "2024-04-20",
+    "end": "2024-05-10",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-001-2",
+    "sku": "SKU-001",
+    "market": "North-America",
+    "supplier_id": "SUP-01",
+    "cause": "transport_delay",
+    "start": "2024-08-08",
+    "end": "2024-08-28",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-001-3",
+    "sku": "SKU-001",
+    "market": "North-America",
+    "supplier_id": "SUP-01",
+    "cause": "demand_surge",
+    "start": "2024-11-26",
+    "end": "2024-12-16",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-001-4",
+    "sku": "SKU-001",
+    "market": "North-America",
+    "supplier_id": "SUP-01",
+    "cause": "forecast_bias",
+    "start": "2025-03-16",
+    "end": "2025-04-05",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-001-5",
+    "sku": "SKU-001",
+    "market": "North-America",
+    "supplier_id": "SUP-01",
+    "cause": "overforecast",
+    "start": "2025-07-04",
+    "end": "2025-07-24",
+    "kpi": "excess_inventory"
+  },
+  {
+    "id": "INC-002-1",
+    "sku": "SKU-002",
+    "market": "Europe",
+    "supplier_id": "SUP-02",
+    "cause": "supplier_delay",
+    "start": "2024-04-23",
+    "end": "2024-05-13",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-002-2",
+    "sku": "SKU-002",
+    "market": "Europe",
+    "supplier_id": "SUP-02",
+    "cause": "transport_delay",
+    "start": "2024-08-11",
+    "end": "2024-08-31",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-002-3",
+    "sku": "SKU-002",
+    "market": "Europe",
+    "supplier_id": "SUP-02",
+    "cause": "demand_surge",
+    "start": "2024-11-29",
+    "end": "2024-12-19",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-002-4",
+    "sku": "SKU-002",
+    "market": "Europe",
+    "supplier_id": "SUP-02",
+    "cause": "forecast_bias",
+    "start": "2025-03-19",
+    "end": "2025-04-08",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-002-5",
+    "sku": "SKU-002",
+    "market": "Europe",
+    "supplier_id": "SUP-02",
+    "cause": "overforecast",
+    "start": "2025-07-07",
+    "end": "2025-07-27",
+    "kpi": "excess_inventory"
+  },
+  {
+    "id": "INC-003-1",
+    "sku": "SKU-003",
+    "market": "APAC",
+    "supplier_id": "SUP-03",
+    "cause": "supplier_delay",
+    "start": "2024-04-26",
+    "end": "2024-05-16",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-003-2",
+    "sku": "SKU-003",
+    "market": "APAC",
+    "supplier_id": "SUP-03",
+    "cause": "transport_delay",
+    "start": "2024-08-14",
+    "end": "2024-09-03",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-003-3",
+    "sku": "SKU-003",
+    "market": "APAC",
+    "supplier_id": "SUP-03",
+    "cause": "demand_surge",
+    "start": "2024-12-02",
+    "end": "2024-12-22",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-003-4",
+    "sku": "SKU-003",
+    "market": "APAC",
+    "supplier_id": "SUP-03",
+    "cause": "forecast_bias",
+    "start": "2025-03-22",
+    "end": "2025-04-11",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-003-5",
+    "sku": "SKU-003",
+    "market": "APAC",
+    "supplier_id": "SUP-03",
+    "cause": "overforecast",
+    "start": "2025-07-10",
+    "end": "2025-07-30",
+    "kpi": "excess_inventory"
+  },
+  {
+    "id": "INC-004-1",
+    "sku": "SKU-004",
+    "market": "North-America",
+    "supplier_id": "SUP-04",
+    "cause": "supplier_delay",
+    "start": "2024-04-29",
+    "end": "2024-05-19",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-004-2",
+    "sku": "SKU-004",
+    "market": "North-America",
+    "supplier_id": "SUP-04",
+    "cause": "transport_delay",
+    "start": "2024-08-17",
+    "end": "2024-09-06",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-004-3",
+    "sku": "SKU-004",
+    "market": "North-America",
+    "supplier_id": "SUP-04",
+    "cause": "demand_surge",
+    "start": "2024-12-05",
+    "end": "2024-12-25",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-004-4",
+    "sku": "SKU-004",
+    "market": "North-America",
+    "supplier_id": "SUP-04",
+    "cause": "forecast_bias",
+    "start": "2025-03-25",
+    "end": "2025-04-14",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-004-5",
+    "sku": "SKU-004",
+    "market": "North-America",
+    "supplier_id": "SUP-04",
+    "cause": "overforecast",
+    "start": "2025-07-13",
+    "end": "2025-08-02",
+    "kpi": "excess_inventory"
+  },
+  {
+    "id": "INC-005-1",
+    "sku": "SKU-005",
+    "market": "Europe",
+    "supplier_id": "SUP-01",
+    "cause": "supplier_delay",
+    "start": "2024-05-02",
+    "end": "2024-05-22",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-005-2",
+    "sku": "SKU-005",
+    "market": "Europe",
+    "supplier_id": "SUP-01",
+    "cause": "transport_delay",
+    "start": "2024-08-20",
+    "end": "2024-09-09",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-005-3",
+    "sku": "SKU-005",
+    "market": "Europe",
+    "supplier_id": "SUP-01",
+    "cause": "demand_surge",
+    "start": "2024-12-08",
+    "end": "2024-12-28",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-005-4",
+    "sku": "SKU-005",
+    "market": "Europe",
+    "supplier_id": "SUP-01",
+    "cause": "forecast_bias",
+    "start": "2025-03-28",
+    "end": "2025-04-17",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-005-5",
+    "sku": "SKU-005",
+    "market": "Europe",
+    "supplier_id": "SUP-01",
+    "cause": "overforecast",
+    "start": "2025-07-16",
+    "end": "2025-08-05",
+    "kpi": "excess_inventory"
+  },
+  {
+    "id": "INC-006-1",
+    "sku": "SKU-006",
+    "market": "APAC",
+    "supplier_id": "SUP-02",
+    "cause": "supplier_delay",
+    "start": "2024-05-05",
+    "end": "2024-05-25",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-006-2",
+    "sku": "SKU-006",
+    "market": "APAC",
+    "supplier_id": "SUP-02",
+    "cause": "transport_delay",
+    "start": "2024-08-23",
+    "end": "2024-09-12",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-006-3",
+    "sku": "SKU-006",
+    "market": "APAC",
+    "supplier_id": "SUP-02",
+    "cause": "demand_surge",
+    "start": "2024-12-11",
+    "end": "2024-12-31",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-006-4",
+    "sku": "SKU-006",
+    "market": "APAC",
+    "supplier_id": "SUP-02",
+    "cause": "forecast_bias",
+    "start": "2025-03-31",
+    "end": "2025-04-20",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-006-5",
+    "sku": "SKU-006",
+    "market": "APAC",
+    "supplier_id": "SUP-02",
+    "cause": "overforecast",
+    "start": "2025-07-19",
+    "end": "2025-08-08",
+    "kpi": "excess_inventory"
+  },
+  {
+    "id": "INC-007-1",
+    "sku": "SKU-007",
+    "market": "North-America",
+    "supplier_id": "SUP-03",
+    "cause": "supplier_delay",
+    "start": "2024-05-08",
+    "end": "2024-05-28",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-007-2",
+    "sku": "SKU-007",
+    "market": "North-America",
+    "supplier_id": "SUP-03",
+    "cause": "transport_delay",
+    "start": "2024-08-26",
+    "end": "2024-09-15",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-007-3",
+    "sku": "SKU-007",
+    "market": "North-America",
+    "supplier_id": "SUP-03",
+    "cause": "demand_surge",
+    "start": "2024-12-14",
+    "end": "2025-01-03",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-007-4",
+    "sku": "SKU-007",
+    "market": "North-America",
+    "supplier_id": "SUP-03",
+    "cause": "forecast_bias",
+    "start": "2025-04-03",
+    "end": "2025-04-23",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-007-5",
+    "sku": "SKU-007",
+    "market": "North-America",
+    "supplier_id": "SUP-03",
+    "cause": "overforecast",
+    "start": "2025-07-22",
+    "end": "2025-08-11",
+    "kpi": "excess_inventory"
+  },
+  {
+    "id": "INC-008-1",
+    "sku": "SKU-008",
+    "market": "Europe",
+    "supplier_id": "SUP-04",
+    "cause": "supplier_delay",
+    "start": "2024-05-11",
+    "end": "2024-05-31",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-008-2",
+    "sku": "SKU-008",
+    "market": "Europe",
+    "supplier_id": "SUP-04",
+    "cause": "transport_delay",
+    "start": "2024-08-29",
+    "end": "2024-09-18",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-008-3",
+    "sku": "SKU-008",
+    "market": "Europe",
+    "supplier_id": "SUP-04",
+    "cause": "demand_surge",
+    "start": "2024-12-17",
+    "end": "2025-01-06",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-008-4",
+    "sku": "SKU-008",
+    "market": "Europe",
+    "supplier_id": "SUP-04",
+    "cause": "forecast_bias",
+    "start": "2025-04-06",
+    "end": "2025-04-26",
+    "kpi": "fill_rate"
+  },
+  {
+    "id": "INC-008-5",
+    "sku": "SKU-008",
+    "market": "Europe",
+    "supplier_id": "SUP-04",
+    "cause": "overforecast",
+    "start": "2025-07-25",
+    "end": "2025-08-14",
+    "kpi": "excess_inventory"
+  }
+]

@@ -1,0 +1,78 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "dataset_id": {
+      "default": "demo-v1",
+      "maxLength": 100,
+      "minLength": 1,
+      "pattern": "^[a-zA-Z0-9_.:-]+$",
+      "title": "Dataset Id",
+      "type": "string"
+    },
+    "kpi": {
+      "default": "fill_rate",
+      "enum": [
+        "fill_rate",
+        "stockout_rate",
+        "lead_time",
+        "excess_inventory",
+        "forecast_accuracy"
+      ],
+      "title": "Kpi",
+      "type": "string"
+    },
+    "start": {
+      "format": "date",
+      "title": "Start",
+      "type": "string"
+    },
+    "end": {
+      "format": "date",
+      "title": "End",
+      "type": "string"
+    },
+    "baseline_days": {
+      "default": 28,
+      "maximum": 90,
+      "minimum": 14,
+      "title": "Baseline Days",
+      "type": "integer"
+    },
+    "sku": {
+      "anyOf": [
+        {
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-zA-Z0-9_.:-]+$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Sku"
+    },
+    "market": {
+      "anyOf": [
+        {
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[a-zA-Z0-9_.:-]+$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Market"
+    }
+  },
+  "required": [
+    "start",
+    "end"
+  ],
+  "title": "InvestigationRequest",
+  "type": "object"
+}

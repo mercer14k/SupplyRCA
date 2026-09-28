@@ -1,0 +1,55 @@
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: supplyrca
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: local-bootstrap-only
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./scripts/init-db.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d supplyrca"]
+      interval: 3s
+      timeout: 3s
+      retries: 30
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    environment:
+      DATABASE_URL: postgresql+psycopg://supplyrca:local-demo-writer@db:5432/supplyrca
+      READ_DATABASE_URL: postgresql+psycopg://supplyrca_reader:local-demo-reader@db:5432/supplyrca
+      APP_MODE: ${APP_MODE:-demo}
+      API_TOKEN: ${API_TOKEN:-}
+      AI_PROVIDER: ${AI_PROVIDER:-none}
+      AI_MODEL: ${AI_MODEL:-qwen2.5:7b}
+      AI_BASE_URL: ${AI_BASE_URL:-http://ollama:11434}
+    depends_on:
+      db:
+        condition: service_healthy
+    ports: ["127.0.0.1:8000:8000"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/ready')"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    depends_on:
+      api:
+        condition: service_healthy
+    ports: ["127.0.0.1:8080:8080"]
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+  ollama:
+    image: ollama/ollama:0.34.4
+    profiles: ["ai"]
+    volumes: ["ollama_models:/root/.ollama"]
+volumes:
+  postgres_data:
+  ollama_models:

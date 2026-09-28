@@ -1,0 +1,98 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "maxLength": 100,
+      "minLength": 1,
+      "pattern": "^[a-zA-Z0-9_.:-]+$",
+      "title": "Id",
+      "type": "string"
+    },
+    "source_id": {
+      "maxLength": 100,
+      "minLength": 1,
+      "pattern": "^[a-zA-Z0-9_.:-]+$",
+      "title": "Source Id",
+      "type": "string"
+    },
+    "ingested_at": {
+      "format": "date-time",
+      "title": "Ingested At",
+      "type": "string"
+    },
+    "validation_status": {
+      "const": "valid",
+      "default": "valid",
+      "title": "Validation Status",
+      "type": "string"
+    },
+    "lineage": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Lineage",
+      "type": "object"
+    },
+    "date": {
+      "format": "date",
+      "title": "Date",
+      "type": "string"
+    },
+    "sku": {
+      "maxLength": 100,
+      "minLength": 1,
+      "pattern": "^[a-zA-Z0-9_.:-]+$",
+      "title": "Sku",
+      "type": "string"
+    },
+    "market": {
+      "maxLength": 100,
+      "minLength": 1,
+      "pattern": "^[a-zA-Z0-9_.:-]+$",
+      "title": "Market",
+      "type": "string"
+    },
+    "supplier_id": {
+      "maxLength": 100,
+      "minLength": 1,
+      "pattern": "^[a-zA-Z0-9_.:-]+$",
+      "title": "Supplier Id",
+      "type": "string"
+    },
+    "ordered": {
+      "minimum": 0,
+      "title": "Ordered",
+      "type": "number"
+    },
+    "received": {
+      "minimum": 0,
+      "title": "Received",
+      "type": "number"
+    },
+    "lead_days": {
+      "minimum": 0,
+      "title": "Lead Days",
+      "type": "number"
+    },
+    "promised_lead_days": {
+      "minimum": 0,
+      "title": "Promised Lead Days",
+      "type": "number"
+    }
+  },
+  "required": [
+    "id",
+    "source_id",
+    "ingested_at",
+    "date",
+    "sku",
+    "market",
+    "supplier_id",
+    "ordered",
+    "received",
+    "lead_days",
+    "promised_lead_days"
+  ],
+  "title": "PurchaseOrder",
+  "type": "object"
+}
